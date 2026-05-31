@@ -57,7 +57,7 @@ export default function App() {
                   <div className="cta-buttons">
                       <a href="#projects" className="btn btn-primary">View My Work</a>
                       <a href="#contact" className="btn btn-secondary">Get In Touch</a>
-                      <a href="/Resume (1).pdf" download className="btn btn-secondary">Download CV</a>
+                      <a href="/My_Resume.pdf" download className="btn btn-secondary">Download CV</a>
                   </div>
               </div>
               <div className="hero-avatar">
