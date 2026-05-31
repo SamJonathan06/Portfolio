@@ -348,9 +348,29 @@ section {
 
 /* Projects Section */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    overflow-x: auto;
     gap: 2rem;
+    padding: 1rem 0 2rem 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Custom modern scrollbar for projects */
+.projects-grid::-webkit-scrollbar {
+    height: 6px;
+}
+.projects-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+.projects-grid::-webkit-scrollbar-thumb {
+    background: var(--accent-light);
+    border-radius: 10px;
+}
+.projects-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
 }
 
 .project-card {
@@ -361,6 +381,9 @@ section {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    min-width: 350px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 }
 
 .project-card:hover {
@@ -662,9 +685,12 @@ footer {
         padding: 3rem 1rem;
     }
 
-    .skills-grid,
-    .projects-grid {
+    .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-width: 280px;
     }
 
     nav ul {
