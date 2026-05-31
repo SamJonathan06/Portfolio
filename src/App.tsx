@@ -187,6 +187,38 @@ export default function App() {
                       <a href="#" className="project-link">View Project <i className="fas fa-arrow-right"></i></a>
                   </div>
               </div>
+
+              <div className="project-card">
+                  <div className="project-image">
+                      <img src="/chatbot_ui.png" alt="Offline ChatBot" />
+                  </div>
+                  <div className="project-content">
+                      <h3>Offline - ChatBot</h3>
+                      <p>A fully functional, 100% offline AI chatbot equipped with voice recognition and Text-to-Speech (TTS) capabilities. It utilizes local LLMs for inference, ensuring that conversations remain entirely private and accessible.</p>
+                      <div className="project-tags">
+                          <span className="project-tag">Streamlit</span>
+                          <span className="project-tag">Ollama</span>
+                          <span className="project-tag">Python</span>
+                      </div>
+                      <a href="#" className="project-link">View Project <i className="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
+
+              <div className="project-card">
+                  <div className="project-image">
+                      <img src="/workout_tracker_ui.png" alt="Workout Tracker" />
+                  </div>
+                  <div className="project-content">
+                      <h3>Workout - Tracker</h3>
+                      <p>A dynamic frontend web application designed to help users log, track, and visualize their daily fitness routines and workout sessions with a streamlined, interactive interface.</p>
+                      <div className="project-tags">
+                          <span className="project-tag">React</span>
+                          <span className="project-tag">TypeScript</span>
+                          <span className="project-tag">CSS</span>
+                      </div>
+                      <a href="https://workout-trackerrr.netlify.app/" className="project-link" target="_blank" rel="noreferrer">View Project <i className="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
           </div>
       </section>
 
